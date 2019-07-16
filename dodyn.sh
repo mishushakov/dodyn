@@ -1,0 +1,1 @@
+MYIP=$(curl 'https://api.ipify.org?format=text' --silent); printf "🧨 Updating $DODYN_RECORD on $DODYN_DOMAIN with ${MYIP}\n\n"; curl -X PUT -H "Content-Type: application/json" -H "Authorization: Bearer $DODYN_TOKEN" -d '{"data": "'${MYIP}'"}' "https://api.digitalocean.com/v2/domains/$DODYN_DOMAIN/records/$DODYN_RECORD" --silent
