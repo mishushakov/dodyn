@@ -2,7 +2,7 @@
 
 Simple One-Line shell script to update your DNS records with DigitalOcean API, that makes use of ipify.org API to retrieve your IP.
 
-# Dependencies
+## Dependencies
 
 - curl
 
